@@ -1,0 +1,9 @@
+services:
+  homepage:
+    container_name: nginx
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      - 80:80
+    networks:
+      - proxy
